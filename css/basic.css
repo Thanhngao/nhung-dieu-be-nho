@@ -1,6 +1,11 @@
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 html,
 body,
@@ -33,4 +38,11 @@ body {
   font-size: 13px;
   font-weight: 100;
   color: #333333;
+}
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
