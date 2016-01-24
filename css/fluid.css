@@ -10,5 +10,10 @@
   }
   .hanh-tinh .wrapper .literal {
     margin-bottom: 15px;
+    text-align: center;
+  }
+  .hanh-tinh .wrapper .tags {
+    -webkit-justify-content: center;
+    justify-content: center;
   }
 }
