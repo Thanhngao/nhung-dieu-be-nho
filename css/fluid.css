@@ -1,6 +1,8 @@
 @media (max-width: 720px) {
   .hanh-tinh {
     margin: 15px 0;
+    -webkit-transition: none;
+    transition: none;
   }
   .hanh-tinh .wrapper {
     -webkit-flex-flow: column nowrap;
