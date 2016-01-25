@@ -1,0 +1,85 @@
+.header {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  .logo {
+    width: 270px;
+    height: 130px;
+    background-image: url("../asset/image/ngao.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    cursor: pointer;
+    &:active {
+      -webkit-transform: rotateZ(-15deg);
+      transform: rotateZ(-15deg);
+    }
+  }
+}
+.hanh-tinh {
+  margin: 30px 0;
+  -webkit-transition: margin .4s ease-in-out;
+  transition: margin .4s ease-in-out;
+  > .wrapper {
+    margin: auto;
+    max-width: 700px;
+    padding: 0 15px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    align-items: center;
+    .decorate {
+      width: 100%;
+      cursor: pointer;
+      -webkit-transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -ms-transition: opacity .2s ease-in-out;
+      -o-transition: opacity .2s ease-in-out;
+      transition: opacity .2s ease-in-out;
+      img {
+        width: 100%;
+      }
+      &:hover {
+        opacity: .95;
+      }
+      &:active {
+        opacity: 1;
+      }
+    }
+    .literal {
+      margin: 5px 0;
+      max-width: 320px;
+      display: none;
+      > .wrapper {
+        width: 100%;
+        .title {
+          width: 100%;
+        }
+        .content {
+          width: 100%;
+          margin: 5px 0;
+        }
+        .tags {
+          list-style: none;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-flex-flow: row wrap;
+          flex-flow: row wrap;
+          li {
+            &:before {
+              content: "#";
+            }
+            a, a:link {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
