@@ -80,5 +80,5 @@
 }
 .hanh-tinh > .wrapper .literal > .wrapper .tags li a,
 .hanh-tinh > .wrapper .literal > .wrapper .tags li a:link {
-  color: #999999;
+  text-decoration: none;
 }
