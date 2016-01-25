@@ -2,8 +2,7 @@
 ```
 layout: post
 title: ""
-og-title: ""
-content: ""
+short: ""
 show: false
 id: ""
 imgUrl: ""
@@ -16,10 +15,8 @@ hour:
 minute:
 second:
 description: >
-
-og-description: >
-
-timeToRead: 
-categories: hoa-tuong
+  content goes here
+timeToRead:
+categories:
 tags:
 ```
