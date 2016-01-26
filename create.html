@@ -1,0 +1,36 @@
+---
+layout: one-column
+---
+<div class="cooking-zone">
+  <div class="row">
+    <div class="group image-input">
+      <label for="text-image-url-input">Địa chỉ ảnh nèèèèè</label>
+      <input id="text-image-url-input" class="alone" type="text" placeholder="http://" />
+      <img id="image-output" src="/asset/image/p-4.jpg" width="320px" />
+    </div>
+  </div>
+  <div id="row-continue-to-writing-container" class="row">
+    <div class="group">
+      <input id="button-continue-to-writing" type="button" value="tiếppppp" />
+    </div>
+  </div>
+</div>
+<script>
+;(function(window) {
+  var textImageUrlInputElem = document.getElementById('text-image-url-input');
+  var imageOutput = document.getElementById('image-output');
+  var rowContinuetoWritingContainerElem = document.getElementById('row-continue-to-writing-container');
+  imageOutput.addEventListener("error", function(e) {
+    var _num = Math.floor(Math.random() * (9 - 7)) + 7;
+    imageOutput.src = "/asset/image/p-"+ _num +".jpg";
+    rowContinuetoWritingContainerElem.classList.remove('active');
+  });
+  textImageUrlInputElem.addEventListener("keyup", function(e) {
+    if (!e.target.value) return false;
+    imageOutput.src = e.target.value;
+    rowContinuetoWritingContainerElem.classList.add('active');
+  });
+  //add to global
+
+})(window);
+</script>
