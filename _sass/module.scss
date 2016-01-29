@@ -84,6 +84,23 @@
   }
 }
 
+.cooking-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  max-width: 660px;
+  margin: auto;
+}
+
+.cooking-zone-serve {
+  width: 320px;
+  background-color: #ddd;
+}
 .cooking-zone {
   display: -webkit-flex;
   display: flex;
@@ -91,9 +108,11 @@
   flex-flow: column nowrap;
   -webkit-align-items: center;
   align-items: center;
+  .row {
+    width: 320px;
+  }
 
   #row-continue-to-writing-container {
-    padding: 15px 0;
     display: none;
     &.active {
       display: block;
@@ -102,10 +121,11 @@
 
 
   input[type='text'], {
+    display: block;
     height: 35px;
     line-height: 35px;
     padding: 0 5px;
-    border: none;
+    border: solid 1px #ddd;
     background: none;
     font-family: inherit;
     font-size: inherit;
@@ -113,29 +133,54 @@
     &:focus {
       outline: none;
     }
-    &[type='text'].alone {
-      width: 320px;
-    }
   }
   .group {
     &.image-input {
-      > * {
+      img {
         display: block;
+        width: 100%;
       }
       label {
+        display: block;
+        width: 100%;
         border: solid 1px #ddd;
         text-align: center;
         height: 25px;
         line-height: 23px;
       }
       input {
-        border: solid 1px #ddd;
+        display: block;
+        width: 100%;
         border-top: none;
+        border-bottom: none;
         font-size: 18px;
       }
-      img {
+    }
+    &.literal-input {
+      input[type="text"] {
+        height: auto;
+        line-height: normal;
+        display: block;
+        width: 100%;
+        border-top: none;
+        border-bottom: none;
+        font-size: 18px;
+        padding: 10px 15px 5px;
+      }
+      textarea {
+        display: block;
+        width: 100%;
+        max-width: 100%;
         border: solid 1px #ddd;
         border-top: none;
+        font-size: 13px;
+        font-family: inherit;
+        color: inherit;
+        padding: 0 15px;
+        height: 300px;
+        &:focus {
+          outline: none;
+        }
       }
     }
   }
