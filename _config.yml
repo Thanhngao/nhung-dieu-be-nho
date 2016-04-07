@@ -1,11 +1,11 @@
 # Site settings
-title: Nga Là Con Mèo Đấy!
+title: Đừng hút thuốc!
 email: huypq104@gmail.com
 phone: +841213866888
 description: > # this means to ignore newlines until "url:"
-  Những điều bé nhỏ của Ngaooooo
+  Xin đừng hút
 url: "http://www.ngaaaaalaconmeooooo" # the base hostname & protocol for your site
-author: Nga Nguyen Thanh
+author: Pham Quang Huy
 github_username: f-ma
 
 # Plugins
